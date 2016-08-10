@@ -8,11 +8,10 @@
           imgCaption = v.caption || '';
 
       $('#photos').append(
-        '<div class="img-container">'+
-          '<a href="'+imgURL+'" data-lightbox="'+imgTitle+'" data-title="'+imgCaption+'">'+
-            '<img src="'+imgURL+'">'+
-          '</a>'+
-        '</div>');
+        '<a href="'+imgURL+'" data-lightbox="'+imgTitle+'" data-title="'+imgCaption+'" class="img-container">'+
+          '<img src="'+imgURL+'">'+
+        '</a>'
+      );
     })
   });
   // Initialize lightbox

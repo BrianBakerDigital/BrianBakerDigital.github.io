@@ -1,5 +1,6 @@
 body {
   background-image: url("../images/bg-diamonds.jpg");
+  background-attachment: fixed;
 }
 
 #photos {
@@ -14,19 +15,16 @@ body {
 img {
   width: 100%;
   height: auto;
-  box-shadow: 0 0 3px 3px #2F2F2F;
-  transition: transform 0.2s, box-shadow 0.2s
-}
-img:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 2px 2px #4F4F4F;
 }
 
 .img-container {
   width: 300px;
   display: inline-block;
   margin: 1em;
-  /*background-color: green;*/
-  /*border: 1px solid #000;*/
-  /*padding: 1em;*/
+  box-shadow: 0 0 3px 3px rgba(32, 32, 32, 0.8);
+  transition: transform 0.2s, box-shadow 0.2s
+}
+.img-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 5px rgba(40, 40, 40, 0.5);
 }
