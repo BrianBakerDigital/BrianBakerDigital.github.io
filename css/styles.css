@@ -1,5 +1,6 @@
 body {
-  background-image: url("../images/bg-diamonds.jpg");
+  /*background-image: url("../images/bg-diamonds.jpg");*/
+  background-image: url('../images/bg-black-dotted.jpg');
   background-attachment: fixed;
 }
 
