@@ -4,11 +4,11 @@
 
     $.each(photos, function ( k, v ) {
       var imgURL = v.imgURL,
-          imgTitle = v.title,
+          imgSet = v.set,
           imgCaption = v.caption || '';
 
       $('#photos').append(
-        '<a href="'+imgURL+'" data-lightbox="'+imgTitle+'" data-title="'+imgCaption+'" class="img-container">'+
+        '<a href="'+imgURL+'" data-lightbox="'+imgSet+'" data-title="'+imgCaption+'" class="img-container">'+
           '<img src="'+imgURL+'">'+
         '</a>'
       );
